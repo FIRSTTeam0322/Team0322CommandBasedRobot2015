@@ -5,10 +5,10 @@
 
 Chassis::Chassis() : Subsystem("Chassis") {
 	
-	frontLeftMotor = new Talon(1);
-	rearLeftMotor = new Talon(2);
-	frontRightMotor = new Talon(3);
-	rearRightMotor = new Talon(4);
+	frontLeftMotor = new Talon(0);
+	rearLeftMotor = new Talon(1);
+	frontRightMotor = new Talon(2);
+	rearRightMotor = new Talon(3);
 	robotDrive = new RobotDrive(frontLeftMotor, rearLeftMotor, frontRightMotor, rearRightMotor);
 	//robotDrive->SetInvertedMotor(robotDrive->kFrontLeftMotor, true);
 	//robotDrive->SetInvertedMotor(robotDrive->kFrontRightMotor, true);
@@ -17,10 +17,10 @@ Chassis::Chassis() : Subsystem("Chassis") {
 	robotDrive->SetSafetyEnabled(true);
 	
 	// Create the DigitalOutput objects for the brake/coast header control system
-	leftFrontBrake = new DigitalOutput(1);
-	leftRearBrake = new DigitalOutput(2);
-	rightFrontBrake = new DigitalOutput(3);
-	rightRearBrake = new DigitalOutput(4);
+	leftFrontBrake = new DigitalOutput(0);
+	leftRearBrake = new DigitalOutput(1);
+	rightFrontBrake = new DigitalOutput(2);
+	rightRearBrake = new DigitalOutput(3);
 }
 
 void Chassis::InitDefaultCommand() {
