@@ -1,6 +1,5 @@
 #include "WPILib.h"
 #include "Commands/Command.h"
-#include "Commands/ExampleCommand.h"
 #include "CommandBase.h"
 
 class Team0322CommandBasedRobot2015: public IterativeRobot
@@ -12,7 +11,7 @@ private:
 	void RobotInit()
 	{
 		CommandBase::init();
-		autonomousCommand = new ExampleCommand();
+		autonomousCommand = NULL;
 		lw = LiveWindow::GetInstance();
 	}
 	
