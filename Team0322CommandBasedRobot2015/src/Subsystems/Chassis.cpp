@@ -34,6 +34,7 @@ void Chassis::InitDefaultCommand() {
 
 void Chassis::driveWithJoystick(Joystick *driveStick) {
 	robotDrive->MecanumDrive_Cartesian(driveStick->GetX(),driveStick->GetY(),driveStick->GetZ());
+	//robotDrive->ArcadeDrive(driveStick, true);
 }
 
 void Chassis::autoDriveSystem(float left, float right) {
