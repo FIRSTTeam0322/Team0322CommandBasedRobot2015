@@ -3,8 +3,6 @@ RobotDrive = X-Axis, Y-Axis, & Z-Axis (Mechanum Drive)
 
 Brake Control = Button 1 (Trigger)
 
-Precision Drive System = [While Holding Button 2] X-Axis, Y-Axis, & Z-Axis (Mechanum Drive Inputs / 4)
-
 
 MANIPULATOR_STICK
 
