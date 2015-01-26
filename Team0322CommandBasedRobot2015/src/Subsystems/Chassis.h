@@ -3,11 +3,6 @@
 #include "Commands/Subsystem.h"
 #include "WPILib.h"
 
-/**
- *
- *
- * @author 322Programmer
- */
 class Chassis: public Subsystem {
 private:
 	// It's desirable that everything possible under private except

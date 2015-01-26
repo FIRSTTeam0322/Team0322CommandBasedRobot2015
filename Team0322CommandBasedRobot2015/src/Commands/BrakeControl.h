@@ -2,20 +2,16 @@
 #define BRAKE_CONTROL_H
 
 #include "../CommandBase.h"
+#include "WPILib.h"
 
-/**
- *
- *
- * @author 322Programmer
- */
 class BrakeControl: public CommandBase {
 public:
 	BrakeControl();
-	virtual void Initialize();
-	virtual void Execute();
-	virtual bool IsFinished();
-	virtual void End();
-	virtual void Interrupted();
+	void Initialize();
+	void Execute();
+	bool IsFinished();
+	void End();
+	void Interrupted();
 };
 
 #endif
