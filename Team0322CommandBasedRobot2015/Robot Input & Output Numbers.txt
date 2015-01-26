@@ -1,0 +1,11 @@
+CHASSIS
+frontLeftMotor = PWM 0
+rearLeftMotor = PWM 1
+
+frontRightMotor = PWM 2
+rearRightMotor = PWM 3
+
+leftFrontBrake = Digital I/O 0
+leftRearBrake = Digital I/O 1
+rightFrontBrake = Digital I/O 2
+rightRearBrake = Digital I/O 3
